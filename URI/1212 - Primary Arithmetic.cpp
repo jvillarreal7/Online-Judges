@@ -28,23 +28,23 @@ int main()
 			if((mod1 + mod2) > 9 && carry == false)
 			{
 				carry = true;
-				//cout<<"Cycle 1"<<endl;
+				//cout<<"Condition 1"<<endl;
 			}
 			else
 			if((mod1 + mod2) > 9 && carry == true)
 			{
 				c++;
-				//cout<<"Cycle 2"<<endl;
+				//cout<<"Condition 2"<<endl;
 			}
 			else
 			if((mod1 + mod2) < 10 && carry == true)
 			{
 				c++;
-				//cout<<"Cycle 3"<<endl;
+				//cout<<"Condition 3"<<endl;
 				if((mod1 + mod2 + 1) < 10)
 				{
 					carry = false;
-					//cout<<">>Cycle 4"<<endl;
+					//cout<<">>Condition 4"<<endl;
 				}
 			}		
 		}
