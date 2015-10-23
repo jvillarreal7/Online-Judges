@@ -1,15 +1,20 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
 	int n,la,lb,sa,sb;
-	bool check=false;
-	cin>>n;
-	cin>>la>>lb>>sa>>sb;
-	if(la<=n&&lb>=n&&sa<=n&&sb>=n)
-		check=true;
-	if(check==true)
+	bool flag1 = false;
+	bool flag2 = false;
+	cin>>n>>la>>lb>>sa>>sb;
+	if(n >= la && n <= lb)
+		flag1 = true;
+	if(n >= sa && n <= sb)
+		flag2 = true;
+	if(flag1 == true && flag2 == true)
+	{
 		cout<<"possivel"<<endl;
+	}
 	else
 		cout<<"impossivel"<<endl;
 	return 0;
