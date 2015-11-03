@@ -72,10 +72,6 @@ int main()
 					r += s[i];
 				}
 			}
-			else
-			{
-				r += s[i];
-			}
 		}
 		if(c.length() > 1)
 		{
