@@ -1,6 +1,6 @@
 //This problem won't be judged using numbers with more than 1 digit. Char vectors for both sets will suffice.
 //"ph" just holds the first word for each set input. Oddily, this word seems to vary during judgement too.
-//So implementing a susbtring algorithm with fixed positions to extract all the data ended up being a huge waste of time lol.
+//So implementing a substring algorithm with fixed positions to extract all the data ended up being a huge waste of time lol.
 
 #include <iostream>
 #include <vector>
