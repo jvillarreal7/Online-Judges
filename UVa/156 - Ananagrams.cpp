@@ -22,15 +22,20 @@ int main() {
 		m[aux].first = s;
 		m[aux].second++;
 	}
-	map<string, pair<string,int> >::const_iterator it;
-    for(it = m.begin(); it != m.end(); it++){
-            if((*it).second.second == 1)
-                v.push_back((*it).second.first);
-    }
-    sort(v.begin(),v.end());
-    for(int i = 0; i < v.size(); i++)
-    {
-        cout<<v.at(i)<<endl;
-    }
+	map<string,pair<string,int> >::const_iterator it;
+	for(it = m.begin(); it != m.end(); it++)
+	{
+		if((*it).second.second == 1)
+			v.push_back((*it).second.first);
+	}
+	/*for(it = m.begin(); it != m.end(); it++)
+	{
+		cout<<(*it).first<<' '<<(*it).second.first<<' '<<(*it).second.second<<endl;
+	}*/
+	sort(v.begin(),v.end())
+	for(int i = 0; i < v.size(); i++)
+	{
+		cout<<v.at(i)<<endl;
+	}
 	return 0;
 }
