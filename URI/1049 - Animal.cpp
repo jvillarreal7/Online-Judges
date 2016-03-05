@@ -1,56 +1,59 @@
 #include <iostream>
 using namespace std;
-int main()
+
+int main() 
 {
-	string a,b,c;
-	cin>>a>>b>>c;
-	if(a=="vertebrado")
+	string word1, word2, word3;
+	cin>>word1>>word2>>word3;
+	if(word1 == "vertebrado")
 	{
-		if(b=="ave")
+		if(word2 == "ave")
 		{
-			if(c=="carnivoro")
+			if(word3 == "carnivoro")
+			{
 				cout<<"aguia"<<endl;
+			}
 			else
-			if(c=="onivoro")
+			{
 				cout<<"pomba"<<endl;
-			else return 0;
+			}
 		}
 		else
-		if(b=="mamifero")
 		{
-			if(c=="onivoro")
+			if(word3 == "onivoro")
+			{
 				cout<<"homem"<<endl;
+			}
 			else
-			if(c=="herbivoro")
+			{
 				cout<<"vaca"<<endl;
-			else return 0;
+			}
 		}
-		else return 0;
 	}
 	else
-	if(a=="invertebrado")
 	{
-		if(b=="inseto")
+		if(word2 == "inseto")
 		{
-			if(c=="hematofago")
+			if(word3 == "hematofago")
+			{
 				cout<<"pulga"<<endl;
+			}
 			else
-			if(c=="herbivoro")
+			{
 				cout<<"lagarta"<<endl;
-			else return 0;
+			}
 		}
 		else
-		if(b=="anelideo")
 		{
-			if(c=="hematofago")
+			if(word3 == "hematofago")
+			{
 				cout<<"sanguessuga"<<endl;
+			}
 			else
-			if(c=="onivoro")
+			{
 				cout<<"minhoca"<<endl;
-			else return 0;
+			}
 		}
-		else return 0;
 	}
-	else return 0;
 	return 0;
 }
