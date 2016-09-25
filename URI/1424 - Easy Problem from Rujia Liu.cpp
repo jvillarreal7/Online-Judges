@@ -8,7 +8,7 @@ int main()
 	int n, m;
 	while(cin>>n>>m)
 	{
-		//UVa's test cases do not seems to take into account that you have to reset your adj. list every time new "n" and "m" values are introduced.
+		//UVa's test cases do not seem to take into account that you have to reset your adj. list every time new "n" and "m" values are introduced.
 		//But URI tests this particular case so you may get WA 10% if you copy/paste your UVa AC as is.
 		map<int, vector<int> > adj_list;
 		for(int i = 0; i < n; i++)
