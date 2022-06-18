@@ -4,7 +4,6 @@ from collections import defaultdict
 
 
 class Graph:
-
     def __init__(self, vertices):
         self.V = vertices
         self.graph = []
@@ -72,6 +71,6 @@ g = Graph(r)
 for x in range(c):
     u, v, w = input().split()
     u, v, w = int(u), int(v), int(w)
-    g.addEdge(u-1, v-1, w)
+    g.addEdge(u - 1, v - 1, w)
 
 g.KruskalMST()

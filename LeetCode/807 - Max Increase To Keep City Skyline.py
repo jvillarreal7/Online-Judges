@@ -27,6 +27,6 @@ class Solution:
                 else:
                     max_height = tb_values[j]
                 if max_height > grid[i][j]:
-                    max_sum += (max_height - grid[i][j])
+                    max_sum += max_height - grid[i][j]
 
         return max_sum

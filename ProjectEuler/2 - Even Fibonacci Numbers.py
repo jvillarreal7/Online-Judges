@@ -1,8 +1,9 @@
 def fibo(n):
     if n < 2:
         return n
-    x = fibo(n-1) + fibo(n-2)
+    x = fibo(n - 1) + fibo(n - 2)
     return x
+
 
 _sum = []
 for i in range(34):

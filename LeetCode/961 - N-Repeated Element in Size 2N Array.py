@@ -6,4 +6,4 @@ class Solution:
                 repetitions[value] += 1
             else:
                 repetitions[value] = 1
-        return list(repetitions.keys())[list(repetitions.values()).index(len(A)/2)]
+        return list(repetitions.keys())[list(repetitions.values()).index(len(A) / 2)]
